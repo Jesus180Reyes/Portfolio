@@ -1,0 +1,239 @@
+/*@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');*/
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+
+}
+
+body
+{
+    min-height: 1000px;
+}
+
+.banner
+{
+    position: relative;
+    width: 100%;
+    min-height:100vh;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.75),rgba(22, 19, 19, 0.75)),url(assets/banner.jpg);    background-size: cover;
+    
+}
+.banner .content
+{
+    max-width: 900px;
+    text-align: center;
+
+}
+.banner .content h2
+{
+    font-size: 5em;
+    color: #fff;
+
+}
+
+.btn
+{
+    font-size: 1em;
+    color: #fff;
+    background: #2189ff;
+    display: inline-block;
+    padding:10px 30px;
+    margin-top:20px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing:1px;
+    transition: 1s;
+
+}
+.btn:hover
+{
+    letter-spacing:3px;
+
+
+}
+header
+{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 40px 100px;
+    z-index: 10000;
+    display: flex;
+    justify-content:space-between;
+    align-items:center;
+    transition: 0.5s;
+
+
+}
+header .logo
+{
+    color: #fff;
+    font-weight: 900;
+    font-size: 2.5em;
+    text-decoration: none;
+
+
+}
+header.sticky .logo
+{
+    color: #111;
+
+
+}
+header .logo span 
+{
+    color: #2189ff;
+
+}
+header .navigation 
+{
+    position: relative;
+    display:flex;
+
+}
+/*header .navigation button
+{
+    
+    font-size:1em;
+    font-weight:  700;
+    color: #fff;
+    background: #2189ff;
+    text-transform: uppercase;
+    padding: 10px 30px;
+    cursor: pointer;
+    text-decoration: none;
+    letter-spacing:1px;
+    border-radius: 2em;
+    transition:0.5s;
+    
+    
+    
+}*/
+
+header .navigation button:hover
+{
+    letter-spacing: 3px;
+}
+header .navigation li
+{
+    list-style: none;
+    margin-left: 30px;
+
+
+}
+header .navigation li a
+{
+    text-decoration: none;
+    color: #fff;
+    font-weight:300;
+
+}
+
+header.sticky .navigation li a
+{
+    color: #111;
+    font-size: 1em;
+    font-weight: 550;
+}
+
+header .navigation li a:hover
+{
+    color: #2189ff;
+    
+}
+header.sticky
+{
+    background: #fff;
+    padding: 10px 120px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.05);
+
+
+}
+
+@media (max-width: 991px) 
+{
+    header,
+    header.sticky
+    {    
+    padding: 10px 20px;
+    }
+    header .navigation
+    {
+        display: none;
+    }
+    header .navigation.active
+    {
+        width: 100%;
+        height: calc(100% - 68px);
+        position: fixed;
+        top: 68px;
+        left: 0;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        background: #fff;
+        
+
+    }
+
+    header .navigation li
+    {
+       margin-left: 0;
+
+    }
+    
+    header .navigation li a
+    {
+        
+        color: #111;
+        font-size: 1.6em;
+        
+
+    }
+    .menuToggle
+    {
+        position: relative;
+        width: 40px;
+        height: 40px;
+        background: url(assets/menu1.png);
+        background-size: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+
+    }
+    .menuToggle.active
+    {
+        background: url(assets/close1.png);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: center;
+        cursor: pointer;
+    }
+    
+    header.sticky .menuToggle
+    {
+        filter: invert(1);
+    }
+    section
+    {
+        padding: 20px;
+
+    }
+    .banner .content h2
+    {
+        font-size: 4em;
+        color: #fff;
+
+    }
+}
+

@@ -6,6 +6,7 @@
     margin: 0;
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    scroll-behavior: smooth;
 
 }
 
@@ -158,6 +159,108 @@ header.sticky
 
 }
 
+
+section
+{
+    padding: 100px;
+}
+
+.about .title
+{
+    
+    position: relative;
+    text-align: center;
+    font-size: 2em;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+    
+}
+
+.about .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 180px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+
+
+}
+.about .title::after
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2189ff;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    
+
+
+}
+
+img
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+    
+}
+
+.about .about-content .left img
+{
+    height: 400px;
+    width: 400px;
+    object-fit: cover;
+
+}
+
+.about .about-content
+{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.about .about-content .left
+{
+    width: 45%;
+
+}
+
+.about .about-content .right
+{
+    width: 55%;
+
+    
+}
+.about .about-content .right .text
+
+{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 10px;    
+}
+
+.about .about-content .right span
+{
+    color: #2189ff;
+
+}
+.about .about-content .right p
+{
+    text-align: justify;
+
+}
+
+
 @media (max-width: 991px) 
 {
     header,
@@ -235,5 +338,41 @@ header.sticky
         color: #fff;
 
     }
+    .about .about-content .column
+    {
+        width: 100%;
+
+    }
+    .about .about-content .left
+    {
+        display: flex;
+        justify-content: center;
+        margin: 0 auto 60px;
+
+    }
+    .about .about-content .right
+    {
+        flex: 100%;
+
+    }
+
+    @media (max-width: 1104) 
+    {
+        .about .about-content .left img
+        {
+            height: 350px;
+            width: 350px;
+        }
+        
+    }
+    
 }
+
+   
+
+  
+
+
+
+
 

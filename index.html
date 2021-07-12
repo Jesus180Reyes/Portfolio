@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en,es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,7 +8,9 @@
     <link rel="stylesheet" href="style.css">
     <title>Portfolio | JArts</title>
 </head>
+
 <body>
+
     <header>
 
         <a href="#" class="logo">JArts<span>.</span></a>
@@ -16,33 +19,55 @@
             <li><a href="#banner">Home</a></li>
             <li><a href="#about">About</a></li>
             <li><a href="#services">Services</a></li>
-            <li><a href="#language">Languages</a></li>
+            <li><a href="#skills">Skills</a></li>
             <li><a href="#works">My Works</a></li>
             <li><a href="#contact">Contact</a></li>
 
-            
+
 
         </ul>
     </header>
+    <!-- Banner -->
     <section class="banner" id="banner">
         <div class="content">
             <h2>Hi i'm Developer</h2>
             <a href="#" class="btn">Download CV</a>
         </div>
-            
+
+    </section>
+
+
+
+    <!-- ABOUT -->
+    <section class="about" id="about">
+        <div class="max-width">
+            <h2 class="title">About me</h2>
+            <div class="about-content">
+                <div class="column-left">
+                    <img src="assets/imagen1.jpg" alt="Html5">
+
+                </div>
+                <div class="column right">
+                    <div class="text">I'm Jesus Reyes and i'm <span>Developer</span> </div>
+                    <p>I'm a Semi-Senior Developer, I focus more on the development of mobile applications and Web Design, I have worked for leading companies in my country, I have experience developing <span>Ecommerce</span>, <span>Landing Page</span> and Mobile Applications such as <span>Taxi app</span>.</p>
+                    
+                 </div>
+
+            </div>
+        </div>
     </section>
 
     <script type="text/javascript">
-        window.addEventListener('scroll', function()
-        {
+        window.addEventListener('scroll', function () {
             const header = document.querySelector('header');
             header.classList.toggle("sticky", window.scrollY > 0);
 
 
         });
 
-        function toggleMenu()
-        {
+
+
+        function toggleMenu() {
             const menuToggle = document.querySelector('.menuToggle');
             const navigation = document.querySelector('.navigation')
             menuToggle.classList.toggle('active');
@@ -51,6 +76,10 @@
 
         }
     </script>
-    
+    <script src="js/main.js"></script>
+
+
+
 </body>
+
 </html>

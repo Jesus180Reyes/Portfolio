@@ -208,10 +208,10 @@ section
 
 img
 {
-    height: 400px;
-    width: 400px;
+    height: 18rem;
+    width: 18rem;
     object-fit: cover;
-    
+
 }
 
 .about .about-content .left img
@@ -338,33 +338,15 @@ img
         color: #fff;
 
     }
-    .about .about-content .column
-    {
-        width: 100%;
+    
+    
 
-    }
-    .about .about-content .left
-    {
-        display: flex;
-        justify-content: center;
-        margin: 0 auto 60px;
-
-    }
-    .about .about-content .right
-    {
-        flex: 100%;
-
-    }
-
-    @media (max-width: 1104) 
-    {
-        .about .about-content .left img
-        {
-            height: 350px;
-            width: 350px;
-        }
+    
         
-    }
+
+        
+    
+    
     
 }
 

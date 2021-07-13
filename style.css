@@ -244,8 +244,104 @@ span
 }
 
 
+.services .title {
+    position: relative;
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.services .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 100px;
+    height: 3px;
+    background: #111;
+    transform: translateX(-50%);
+    
 
 
+}
+.about .title::after
+{
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    left: 50%;
+    font-size: 14px;
+    font-weight: 400;
+    color: #2189ff;
+    padding: 5px;
+    background: #fff;
+    transform: translateX(-50%);
+    
+
+
+}
+
+.services .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.services .content .servicesBx
+{
+    padding: 70px 50px;
+    max-width: 340px;
+    margin: 20px;
+    transition: 0.5s;
+    text-align: center;
+    background: #f5f5f5;
+
+}
+.services .content .servicesBx:hover
+{
+    background: #2189ff;
+
+}
+.services .content .servicesBx img
+{
+    max-width: 80px;
+    transition: 0.5s;
+
+}
+.services .content .servicesBx:hover img
+{
+    filter:invert(1);
+
+    
+}
+.services .content .servicesBx h2
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+.services .content .servicesBx:hover h2
+{
+    color: #fff;
+
+}
+.services .content .servicesBx p
+{
+    margin: 0;
+    transition: 0.5s;
+
+}
+.services .content .servicesBx:hover p
+{
+    color: #fff;
+
+}
 
 
 
@@ -356,6 +452,10 @@ span
         margin-left: 0;
 
     }
+
+    
+    
+
     
     
 }

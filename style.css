@@ -459,8 +459,9 @@ span
     position: relative;
     text-align: center;
     font-size: 1.25em;
-    margin-bottom: 60px;
+    margin-bottom: 40px;
     padding-bottom: 20px;
+    color: #111;
 }
 
 .contact .title::before
@@ -477,6 +478,76 @@ span
 
 
 }
+.contact .container
+{
+    position: relative;
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 20px;
+    padding-bottom: 100px;
+    color: #111;
+    
+}
+
+.contact .container .sub-title h2
+{
+   
+    margin-top: 20px;
+    color: #111;
+    text-align: center;
+
+}
+.contact .container .sub-title a
+{
+    font-size: 1em;
+    color: #fff;
+    background: #2189ff;
+    border-color: #111;
+    display: inline-block;
+    padding:10px 30px;
+    margin-top:20px;
+    border-radius: 40px;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing:1px;
+    transition: 1s;
+}
+.contact .container .sub-title a:hover
+{
+    color: #111;
+    background: #fff;
+    border: 3px solid #2189ff;
+}
+
+footer
+{
+    background:rgba(20, 19, 19, 0.75);
+    color: #fff;
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.copyright
+{
+    text-align: center;
+}
+footer a
+{
+   color: #fff;
+   width: 10px;
+   bottom: 0;
+    left: 50%;
+    width: 110px;
+    height: 4px;
+    
+
+   
+}
+
+
 
 
 

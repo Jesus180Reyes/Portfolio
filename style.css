@@ -397,7 +397,7 @@ span
 
     
 }
-.myworks .title {
+.works .title {
     position: relative;
     text-align: center;
     font-size: 1.25em;
@@ -405,7 +405,7 @@ span
     padding-bottom: 20px;
 }
 
-.myworks .title::before
+.works .title::before
 {
     content: "";
     position: absolute;
@@ -419,6 +419,74 @@ span
 
 
 }
+.works .content
+{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.works .content .workBx
+{
+    padding: 70px 50px;
+    max-width: 390px;
+    margin: 20px;
+    transition: 1s;
+    text-align: center;
+    background: #f5f5f5;
+
+}
+.works .content .workBx img
+{
+    max-width: 205px;
+    transition: 1s;
+}
+
+.works .content .workBx h2
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    transition: 0.5s;
+
+}
+
+
+
+.contact .title {
+    position: relative;
+    text-align: center;
+    font-size: 1.25em;
+    margin-bottom: 60px;
+    padding-bottom: 20px;
+}
+
+.contact .title::before
+{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 110px;
+    height: 4px;
+    background: #111;
+    transform: translateX(-50%);
+    
+
+
+}
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -533,7 +601,7 @@ span
 
     
     
-
+    
     
     
 }
